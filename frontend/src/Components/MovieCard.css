@@ -1,0 +1,49 @@
+/* Global */
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #000;
+  font-family: 'Segoe UI', sans-serif;
+  color: #fff;
+}
+
+/* Grid container */
+.movie-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 24px;
+  padding: 32px;
+}
+
+/* Card style */
+.movie-card {
+  background-color: #111;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 0 8px rgba(0, 255, 0, 0.15);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.movie-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 0 16px rgba(0, 255, 0, 0.6);
+  border: 1px solid #0f0;
+}
+
+/* Card text */
+.movie-card h2 {
+  color: #0f0;
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.movie-card p {
+  color: #ccc;
+  font-size: 1rem;
+  margin-bottom: 15px;
+}
+
+/* ReactPlayer tweaks */
+.movie-card iframe {
+  border-radius: 6px;
+}
